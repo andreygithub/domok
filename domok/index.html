@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="domok">
+        <meta name="author" content="andrey zagorets">
+        <title>domok index page</title>
+        <link href="css/domok.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <ul class="menu">
+                    <li>О магазине</li>
+                    <li>Доставка</li>
+                    <li>Правила работы</li>
+                    <li>Помощь</li>
+                    <li>Способы оплаты</li>
+                    <li>Партнерам</li>
+                    <li>Написать нам</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <ul>
+                    <li><a data-toggle="modal" data-target="#registration_modal" href="#">Регистрация</a></li>
+                    <li><a data-toggle="modal" data-target="#enter_modal" href="#">Вход</a></li>                   
+                </ul>
+            </div>
+        </div>       
+        <div class="container main"> 
+        <header>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
+                <a href="index.html"><img src="images/logo.jpg" alt="image logo"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 info">
+                <ul>
+                    <li class="phone">+7 (727) <b>759 56 36</b></li>
+                    <li class="phone">+7 (727) <b>759 56 36</b></li>
+                    <li class="email"><a href="mailto:dom-ok@mail.kz">dom-ok@mail.kz</a></li>
+                    <li class="call-me"><a data-toggle="modal" data-target="#call_me_modal" href="#">Обратный звонок</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shop">
+                <div class="cart">
+                    <a href="#"><img src="images/cart.jpg" alt="cart"></a>
+                    <a href="#">
+                        <span class="in-cart">в корзине</span>
+                        <span class="cs_total_count">нет</span>
+                        <span class="cs_total_dem">товаров</span>
+                    </a>
+                </div>
+                <form class="form-group search" role="form" method="get" action="#">
+                    <input name="search_string" class="form-control" placeholder="Найти" type="text">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle btn btn-primary" type="button" data-toggle="collapse" data-target="#navbar-collapse">Показать меню</button>
+                    <div class="navbar-collapse-bar">
+                        <div class="col-sm-5"><a class="navbar-brand" href="#">Dom-ok</a></div>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТАЛОГ <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Компьютеры</a></li>
+                                <li><a href="#">Телефоны</a></li>
+                                <li><a href="#">Фото и видео</a></li>
+                                <li><a href="#">Комплектующие</a></li>
+                                <li><a href="#">Разное</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">НАШИ УСЛУГИ</a></li>
+                        <li><a href="#">КАТАЛОГ УСЛУГ</a></li>
+                    </ul>
+                </nav>
+        </header>
+            
+        <!-- Carusel -->
+        <div id="main-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-image-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-image-2" data-slide-to="1"></li>
+                <li data-target="#carousel-image-3" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="carousel-image-1">
+                    <img src="images/carusel/1.jpg" alt="не удалось загрузить изображение">
+                </div>
+                <div class="item" id="carousel-image-2">
+                    <img src="images/carusel/2.jpg" alt="не удалось загрузить изображение">
+                </div>
+                <div class="item" id="carousel-image-3">
+                    <img src="images/carusel/3.jpg" alt="не удалось загрузить изображение">
+                </div>                
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#main-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        
+        <div class="content-menu">
+            <div class="content-menu-header">Наши товары</div>
+            <ul>
+                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">СМЕСИТЕЛИ ДЛЯ ВАННОЙ</a></li>
+                <li><a href="#"><img src="images/content-menu/2.jpg" alt="не удалось загрузить изображение">СМЕСИТЕЛИ ДЛЯ РАКОВИН И МОЕК</a></li>
+                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">КОМПЛЕКТУЮЩИЕ</a></li>
+                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">АКСЕССУАРЫ</a></li>
+                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">НАШИ ПАРТНЕРЫ</a></li>            
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <h1>Почему мы?</h1>
+                <p>Правда, специалисты отмечают, что поведенческий таргетинг переворачивает типичный стратегический маркетинг, повышая конкуренцию. Партисипативное планирование достижимо в разумные сроки. В рамках концепции Акоффа и Стэка, стиль менеджмента поддерживает комплексный ребрендинг, признавая определенные рыночные тенденции. Корпоративная культура инновационна.</p>
+                <p>Воздействие на потребителя развивает SWOT-анализ, учитывая современные тенденции. Точечное воздействие решительно упорядочивает ребрендинг, не считаясь с затратами. Создание приверженного покупателя упорядочивает фактор коммуникации, повышая конкуренцию. Торговая марка спорадически экономит культурный продуктовый ассортимент, расширяя долю рынка. Медиа, как принято считать, традиционно стабилизирует культурный побочный PR-эффект, опираясь на опыт западных коллег.</p>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                
+            </div>
+        </div>
+        <footer>
+            <div>
+                footer
+            </div>
+                
+            
+        </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+.main {
+  background:rgb(250, 250, 250); margin-top: 20px; margin-bottom: 20px; box-shadow: 0 0 20px rgba(0,0,0,1);padding-right: 0px; padding-left: 0px;
+  h1 {border-bottom: 2px solid @gray-lighter; margin-bottom: 20px;}
+}
+
+header {
+    a {color:(@link-color-invert);}
+    a:hover {color:(@link-hover-color-invert); text-decoration:none;}
+    .topbar {
+      background: lighten(@main-color, 7%);
+      @media (max-width: @grid-float-breakpoint) {
+        display: none;
+      }
+      .brand {color: @main-color-invert; font-size: @font-size-h1; padding: 10px; text-shadow: 2px 2px 3px black, 1px 1px 1em white;}
+      .info {text-align: right; padding: 10px;}
+      .tel {color: @main-color-invert; font-size: @font-size-large;}
+      .call-me {font-size: @font-size-base;}
+      .cart {color: @main-color-invert; text-align: right; padding: 10px;}
+    }
+    .logo {color: @main-color-invert; font-size: @font-size-large; background: @main-color; padding-right: 0px; padding-left: 0px; width: 100%;}
+
+    .navbar-collapse-bar{
+        @media (min-width: @grid-float-breakpoint) {
+            display: none;
+        }
+        .cart {color: @main-color-invert; text-align: right; padding: 10px; font-size:@font-size-small;}
+    }
+    .search {
+        @media (max-width: @grid-float-breakpoint) {
+            width: 100%;
+        } 
+        @media (min-width: @grid-float-breakpoint) {
+            width: 150px;
+            .form-control {float: right;}
+        }
+        i {
+            cursor: pointer;
+            position: relative;
+            right: 12px;
+            top: -26px;
+            float: right;
+            font-size: 22px;
+        }
+    }
+}
+#call_me_modal {color: @text-color;}
+
+.content {margin-top: 20px;}
+
+footer {
+  padding-bottom: 30px; background: @gray-lighter;
+  
+  .copy {margin: 10px 0; font-size: @font-size-large; color: @main-color;}
+  .dev  {margin: 10px 0; font-size: @font-size-base; color: @text-color;}
+  .links { 
+    margin: 10px 0; padding-left: 0; 
+    li { display: inline; padding: 0px 2px 0px 6px;}
+    li+li {border-left: 1px solid @link-color; }
+    li:first-child { padding-left: 0; }
+  }
+}

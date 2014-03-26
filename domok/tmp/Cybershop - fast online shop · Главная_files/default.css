@@ -1,0 +1,56 @@
+@import url("./lib/jquery.jgrowl.css");
+
+#csCart th, #csCart td {text-align:center; line-height: 30px;}
+#csCart .title {text-align:left;}
+#csCart th.total {text-align:right; padding-right:5px;}
+
+#csMiniCart {font-size: .8em;}
+#csMiniCart h5 {margin: 0;}
+
+#csGallery {text-align: center;}
+#csGallery #mainImage {margin-bottom: 10px; padding: 2px; border: 1px solid #ddd;}
+#csGallery .thumbnails {width: 405px; margin:auto;}
+#csGallery .span2 {margin-left: 10px; width: 120px; padding: 2px;}
+
+#csOrder .error {
+	border: 1px solid brown !important;
+}
+
+.cs_product .price {
+	padding-left: 50px;
+	padding-right: 30px;
+}
+.cs_product .old_price {padding-right: 30px;}
+.cs_product .tags, .cs_product .color, .cs_product .size  {
+	padding-right: 20px;
+	font-size: 0.9em;
+}
+
+.cs_product .old_price, #csProduct .old_price {
+	color: brown;
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+.csProductsLog, .csGalleryLog {
+	width: 100%;
+	overflow: auto;
+	word-wrap: normal;
+	white-space: pre;
+}
+
+#csOrder {margin-top:50px;}
+#csOrder .radio {
+	min-height: 30px;
+	margin-bottom: 10px;
+}
+#csOrder .radio img {
+	max-height:30px;
+	margin-top:-2px;
+	padding: 0 10px;
+}
+
+
+.cs-message-success  {background-color: green !important;}
+.cs-message-error  {background-color: brown !important;}
+.cs-message-info  {background-color: black !important;}
