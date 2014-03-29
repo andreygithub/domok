@@ -12,7 +12,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-
+  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
   > .item {
     display: none;
     position: relative;
@@ -143,7 +143,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -158,9 +158,10 @@
     height: 10px;
     margin: 1px;
     text-indent: -999px;
-    border: 1px solid @carousel-indicator-border-color;
+    border: 1px inset #a1a1a1;
     border-radius: 10px;
     cursor: pointer;
+    background-color: #a1a1a1;
 
     // IE8-9 hack for event handling
     //
@@ -170,8 +171,8 @@
     //
     // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
     // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
-    background-color: rgba(0,0,0,0); // IE9
+/*    background-color: #000 \9; // IE8
+    background-color: rgba(0,0,0,0); // IE9*/
   }
   .active {
     margin: 0;
@@ -227,6 +228,6 @@
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    bottom: -40px;
   }
 }

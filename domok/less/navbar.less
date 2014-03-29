@@ -260,16 +260,25 @@
 
   // Uncollapse the nav
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
+  //  float: left;
+    text-align: center;
     margin: 0;
 
     > li {
+      width: 25%;
       float: left;
       > a {
         padding-top:    @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
       }
     }
+    > li + li {
+        background: url(../images/line-2.png) no-repeat 0 50%;
+          //border-left: 2px solid @gray-light;
+      }
+      .open .dropdown-menu {
+          display: inline-flex;
+      }
 
     &.navbar-right:last-child {
       margin-right: -@navbar-padding-horizontal;
@@ -387,7 +396,7 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
+  background: linear-gradient(to bottom, @navbar-default-bg, darken(@navbar-default-bg, 10%));
   border-color: @navbar-default-border;
 
   .navbar-brand {
@@ -418,7 +427,7 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+ //       background-color: @navbar-default-link-active-bg;
       }
     }
     > .disabled > a {

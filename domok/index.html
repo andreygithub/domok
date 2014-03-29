@@ -10,155 +10,333 @@
         <link href="css/domok.css" rel="stylesheet">
     </head>
     <body>
-        <div class="topbar">
-            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <ul class="menu">
-                    <li>О магазине</li>
-                    <li>Доставка</li>
-                    <li>Правила работы</li>
-                    <li>Помощь</li>
-                    <li>Способы оплаты</li>
-                    <li>Партнерам</li>
-                    <li>Написать нам</li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <ul>
-                    <li><a data-toggle="modal" data-target="#registration_modal" href="#">Регистрация</a></li>
-                    <li><a data-toggle="modal" data-target="#enter_modal" href="#">Вход</a></li>                   
-                </ul>
-            </div>
-        </div>       
-        <div class="container main"> 
-        <header>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
-                <a href="index.html"><img src="images/logo.jpg" alt="image logo"></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 info">
-                <ul>
-                    <li class="phone">+7 (727) <b>759 56 36</b></li>
-                    <li class="phone">+7 (727) <b>759 56 36</b></li>
-                    <li class="email"><a href="mailto:dom-ok@mail.kz">dom-ok@mail.kz</a></li>
-                    <li class="call-me"><a data-toggle="modal" data-target="#call_me_modal" href="#">Обратный звонок</a></li> 
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shop">
-                <div class="cart">
-                    <a href="#"><img src="images/cart.jpg" alt="cart"></a>
-                    <a href="#">
-                        <span class="in-cart">в корзине</span>
-                        <span class="cs_total_count">нет</span>
-                        <span class="cs_total_dem">товаров</span>
-                    </a>
-                </div>
-                <form class="form-group search" role="form" method="get" action="#">
-                    <input name="search_string" class="form-control" placeholder="Найти" type="text">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <button class="navbar-toggle btn btn-primary" type="button" data-toggle="collapse" data-target="#navbar-collapse">Показать меню</button>
-                    <div class="navbar-collapse-bar">
-                        <div class="col-sm-5"><a class="navbar-brand" href="#">Dom-ok</a></div>
-                    </div>
-                </div>
-                <nav class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">ГЛАВНАЯ</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТАЛОГ <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Компьютеры</a></li>
-                                <li><a href="#">Телефоны</a></li>
-                                <li><a href="#">Фото и видео</a></li>
-                                <li><a href="#">Комплектующие</a></li>
-                                <li><a href="#">Разное</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">НАШИ УСЛУГИ</a></li>
-                        <li><a href="#">КАТАЛОГ УСЛУГ</a></li>
-                    </ul>
-                </nav>
-        </header>
-            
-        <!-- Carusel -->
-        <div id="main-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-image-1" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-image-2" data-slide-to="1"></li>
-                <li data-target="#carousel-image-3" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active" id="carousel-image-1">
-                    <img src="images/carusel/1.jpg" alt="не удалось загрузить изображение">
-                </div>
-                <div class="item" id="carousel-image-2">
-                    <img src="images/carusel/2.jpg" alt="не удалось загрузить изображение">
-                </div>
-                <div class="item" id="carousel-image-3">
-                    <img src="images/carusel/3.jpg" alt="не удалось загрузить изображение">
-                </div>                
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#main-carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#main-carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-        
-        <div class="content-menu">
-            <div class="content-menu-header">Наши товары</div>
-            <ul>
-                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">СМЕСИТЕЛИ ДЛЯ ВАННОЙ</a></li>
-                <li><a href="#"><img src="images/content-menu/2.jpg" alt="не удалось загрузить изображение">СМЕСИТЕЛИ ДЛЯ РАКОВИН И МОЕК</a></li>
-                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">КОМПЛЕКТУЮЩИЕ</a></li>
-                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">АКСЕССУАРЫ</a></li>
-                <li><a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение">НАШИ ПАРТНЕРЫ</a></li>            
-            </ul>
-        </div>
-        
-        <div class="content">
-            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                <h1>Почему мы?</h1>
-                <p>Правда, специалисты отмечают, что поведенческий таргетинг переворачивает типичный стратегический маркетинг, повышая конкуренцию. Партисипативное планирование достижимо в разумные сроки. В рамках концепции Акоффа и Стэка, стиль менеджмента поддерживает комплексный ребрендинг, признавая определенные рыночные тенденции. Корпоративная культура инновационна.</p>
-                <p>Воздействие на потребителя развивает SWOT-анализ, учитывая современные тенденции. Точечное воздействие решительно упорядочивает ребрендинг, не считаясь с затратами. Создание приверженного покупателя упорядочивает фактор коммуникации, повышая конкуренцию. Торговая марка спорадически экономит культурный продуктовый ассортимент, расширяя долю рынка. Медиа, как принято считать, традиционно стабилизирует культурный побочный PR-эффект, опираясь на опыт западных коллег.</p>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <div class="panel-uslug">
-                    <div class="panel-heading">
-                        Каталог услуг
-                    </div>
-                    <div class="panel-body">
-                        <ul>
-                            <li><a href="#">Установка систем видеонаблюдения</a></li>
-                            <li><a href="#">Установка сантехники, кранов</a></li>
-                            <li><a href="#">Услуги электрика</a></li>
-                            <li><a href="#">Установка сантехники, кранов</a></li>
-                            <li><a href="#">Ремонт квартир и домов</a></li>
-                            <li><a href="#">Решаем бытовые и строительные проблемы</a></li>
+        <div class="container main">
+            <div class="topbar">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="menu">
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Правила работы</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Способы оплаты</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Написать нам</a></li>
                         </ul>
                     </div>
-                    <div class="panel-image">
-                        <img src="images/panel-uslug.jpg" alt="изображение панели">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="autorization">
+                            <li><a data-toggle="modal" data-target="#registration_modal" href="#">Регистрация</a></li>
+                            <li><a data-toggle="modal" data-target="#enter_modal" href="#">Вход</a></li>                   
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <div class="container"> 
+                <header>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  logo">
+                            <a href="#"><img src="images/logo.jpg" alt="image logo"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 info">
+                            <ul>
+                                <li class="phone">+7 (727) <b>759 56 36</b></li>
+                                <li class="phone">+7 (727) <b>759 56 36</b></li>
+                                <li class="email"><a href="mailto:dom-ok@mail.kz">dom-ok@mail.kz</a></li>
+                                <li class="call-me"><a data-toggle="modal" data-target="#call_me_modal" href="#">Обратный звонок</a></li> 
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shop">
+                            <div class="cart">
+                                <a href="#"><img src="images/cart.jpg" alt="cart"></a>
+                                <a href="#">
+                                    <span class="in-cart">в корзине</span>
+                                    <span class="cs_total_count">нет</span>
+                                    <span class="cs_total_dem">товаров</span>
+                                </a>
+                            </div>
+                            <form class="form-group search" role="form" method="get" action="#">
+                                <input name="search_string" class="form-control" placeholder="Найти" type="text">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle btn btn-primary" type="button" data-toggle="collapse" data-target="#navbar-collapse">Показать меню</button>
+           <!--                 <div class="navbar-collapse-bar">
+                                <div class="col-sm-5"><a class="navbar-brand" href="#">Dom-ok</a></div>
+                            </div>
+            -->            </div>
+                        <nav class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТАЛОГ <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Компьютеры</a></li>
+                                        <li><a href="#">Телефоны</a></li>
+                                        <li><a href="#">Фото и видео</a></li>
+                                        <li><a href="#">Комплектующие</a></li>
+                                        <li><a href="#">Разное</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">НАШИ УСЛУГИ</a></li>
+                                <li><a href="#">КАТАЛОГ УСЛУГ</a></li>
+                            </ul>
+                        </nav>
+                </header>
+
+                <!-- Carusel -->
+                <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-image-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-image-2" data-slide-to="1"></li>
+                        <li data-target="#carousel-image-3" data-slide-to="2"></li>
+                        <li data-target="#carousel-image-4" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" id="carousel-image-1">
+                            <img src="images/carusel/1.jpg" alt="не удалось загрузить изображение">
+                        </div>
+                        <div class="item" id="carousel-image-2">
+                            <img src="images/carusel/2.jpg" alt="не удалось загрузить изображение">
+                        </div>
+                        <div class="item" id="carousel-image-3">
+                            <img src="images/carusel/3.jpg" alt="не удалось загрузить изображение">
+                        </div> 
+                        <div class="item" id="carousel-image-4">
+                            <img src="images/carusel/4.jpg" alt="не удалось загрузить изображение">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+ <!--                   <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#main-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+ -->               </div>
+
+                <div class="content-menu">
+                    <h1>Наши товары</h1>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/content-menu/1.jpg" alt="не удалось загрузить изображение"></a>
+                                <div class="caption">
+                                    <a href="#">СМЕСИТЕЛИ ДЛЯ ВАННОЙ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/content-menu/2.jpg" alt="не удалось загрузить изображение"></a>
+                                <div class="caption">
+                                    <a href="#">СМЕСИТЕЛИ ДЛЯ РАКОВИН И МОЕК</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/content-menu/3.jpg" alt="не удалось загрузить изображение"></a>
+                                <div class="caption">
+                                    <a href="#">КОМПЛЕКТУЮЩИЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/content-menu/4.jpg" alt="не удалось загрузить изображение"></a>
+                                <div class="caption">
+                                    <a href="#">АКСЕССУАРЫ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/content-menu/5.jpg" alt="не удалось загрузить изображение"></a>
+                                <div class="caption">
+                                    <a href="#">НАШИ ПАРТНЕРЫ</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <h1>Почему мы?</h1>
+                        <p>Правда, специалисты отмечают, что поведенческий таргетинг переворачивает типичный стратегический маркетинг, повышая конкуренцию. Партисипативное планирование достижимо в разумные сроки. В рамках концепции Акоффа и Стэка, стиль менеджмента поддерживает комплексный ребрендинг, признавая определенные рыночные тенденции. Корпоративная культура инновационна.</p>
+                        <p>Воздействие на потребителя развивает SWOT-анализ, учитывая современные тенденции. Точечное воздействие решительно упорядочивает ребрендинг, не считаясь с затратами. Создание приверженного покупателя упорядочивает фактор коммуникации, повышая конкуренцию. Торговая марка спорадически экономит культурный продуктовый ассортимент, расширяя долю рынка. Медиа, как принято считать, традиционно стабилизирует культурный побочный PR-эффект, опираясь на опыт западных коллег.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary panel-uslug">
+                            <div class="panel-heading">
+                                Каталог услуг
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">Установка систем видеонаблюдения</a></li>
+                                    <li><a href="#">Установка сантехники, кранов</a></li>
+                                    <li><a href="#">Услуги электрика</a></li>
+                                    <li><a href="#">Установка сантехники, кранов</a></li>
+                                    <li><a href="#">Ремонт квартир и домов</a></li>
+                                    <li><a href="#">Решаем бытовые и строительные проблемы</a></li>
+                                </ul>
+                            </div>
+                            <div class="panel-image">
+                                <img src="images/panel-uslug.jpg" alt="изображение панели">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-primary panel-popular">
+                        <div class="panel-heading">
+                            Популярные товары
+                        </div>
+                        <div class="panel-body">
 
-        </div>
-        <footer>
-            <div>
-                footer
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail thumbnail-element">
+                                    <img src="images/popular/1.jpg" alt="не удалось загрузить изображение">
+                                    <div class="caption">
+                                        <a href="#">Смеситель для умывальника Emmevi ANTEF</a>
+                                    </div>
+                                    <div class="thumbnail-footer">
+                                        <div class="thumbnail-footer-price">
+                                            12 245 тг
+                                        </div>
+                                        <div class="thumbnail-footer-button">
+                                            <button type="button" class="btn btn-info">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail thumbnail-element">
+                                    <img src="images/popular/1.jpg" alt="не удалось загрузить изображение">
+                                    <div class="caption">
+                                        <a href="#">Смеситель для умывальника Emmevi ANTEF</a>
+                                    </div>
+                                    <div class="thumbnail-footer">
+                                        <div class="thumbnail-footer-price">
+                                            12 245 тг
+                                        </div>
+                                        <div class="thumbnail-footer-button">
+                                            <button type="button" class="btn btn-info">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail thumbnail-element">
+                                    <img src="images/popular/1.jpg" alt="не удалось загрузить изображение">
+                                    <div class="caption">
+                                        <a href="#">Смеситель для умывальника Emmevi ANTEF</a>
+                                    </div>
+                                    <div class="thumbnail-footer">
+                                        <div class="thumbnail-footer-price">
+                                            12 245 тг
+                                        </div>
+                                        <div class="thumbnail-footer-button">
+                                            <button type="button" class="btn btn-info">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail thumbnail-element">
+                                    <img src="images/popular/1.jpg" alt="не удалось загрузить изображение">
+                                    <div class="caption">
+                                        <a href="#">Смеситель для умывальника Emmevi ANTEF</a>
+                                    </div>
+                                    <div class="thumbnail-footer">
+                                        <div class="thumbnail-footer-price">
+                                            12 245 тг
+                                        </div>
+                                        <div class="thumbnail-footer-button">
+                                            <button type="button" class="btn btn-info">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <h1>Товары</h1>
+                            <ul>
+                                <li><a href="#">Смесители для ванной</a></li>
+                                <li><a href="#">Смесители для раковин и моек</a></li>
+                                <li><a href="#">Комплектующие</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <h1>Услуги</h1>
+                            <ul>
+                                <li><a href="#">Системы видеонаблюдения под заказ</a></li>
+                                <li><a href="#">Установка систем видеонаблюдения</a></li>
+                                <li><a href="#">Установка сантехники, кранов</a></li>
+                                <li><a href="#">Услуги электрика</a></li>
+                                <li><a href="#">Ремонт квартир и домов</a></li>
+                                <li><a href="#">Решаем бытовые и строительные проблемы</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
+                            <h1>+7 (727) 759 56 36</h1>
+                            <p>
+                                Вы можете связаться с нами:</br>
+                                пн - пт: 10:00 - 19:00</br>
+                                сб: 10:00 - 15:00</br>
+                                вс: выходной
+                            </p>
+                            <p>
+                                Мы в соц. сетях:
+                                <img src="images/vkontakte.jpg">
+                                <img src="images/facebook.jpg">
+                                <img src="images/youtube.jpg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-label">
+                        Copyright © 2014. Dom-ok.kz
+                    </div>
+                </footer>
             </div>
-                
-            
-        </footer>
         </div>
-    </body>
-</html>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Start carusel -->
+        <script>
+            $(document).ready(function() {
+                $('.carousel').carousel({
+                    interval: 2000
+                });
+            });
+        </script> 
+        <script>
+ /*           $(document).ready(function() {
+                $('.search .form-control').focus(function() {
+                    $(this).animate({
+                        width: '250px'
+                    },500, 'swing');
+                });
+                $('.search .form-control').focusout(function() {
+                    $(this).animate({
+                        width: '150px'
+                    },500, 'swing');    
+                });
+            });*/
+        </script>
+        </body>
+        </html>
